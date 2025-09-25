@@ -26,8 +26,9 @@ function reverse(){
 function toUpperCase(){
     let string = prompt(`Enter a string you want capitilized: `);
     let newString = ``;
-    for(i = 0; i < string.length; i++){
-        let char = string.charCodeAt(string[i]);
+    for(let i = 0; i < string.length; i++){
+        let char = string.charCodeAt(i);
+        console.log(char);
         if(char <= 122 && char >= 97)
             newString = newString + String.fromCharCode(char - 32);
         else
